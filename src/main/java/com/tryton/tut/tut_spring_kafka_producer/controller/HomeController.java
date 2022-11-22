@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.controller;
+package com.tryton.tut.tut_spring_kafka_producer.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

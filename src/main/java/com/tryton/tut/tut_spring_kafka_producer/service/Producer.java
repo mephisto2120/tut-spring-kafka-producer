@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.service;
+package com.tryton.tut.tut_spring_kafka_producer.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.apachecommons.CommonsLog;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @CommonsLog
 public class Producer {
 
-    private static final String TOPIC = "users";
+    private static final String TOPIC = "wikimedia.recentchange";
 
     private final KafkaTemplate kafkaTemplate;
 

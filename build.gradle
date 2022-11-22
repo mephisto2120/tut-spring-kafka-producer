@@ -25,6 +25,8 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
 
     implementation 'org.springframework.kafka:spring-kafka:2.9.2'
+	implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+	implementation 'com.launchdarkly:okhttp-eventsource:2.5.0'
 
     implementation "io.micrometer:micrometer-core:$micrometerVersion"
     implementation "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"

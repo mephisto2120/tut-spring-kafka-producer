@@ -1,6 +1,6 @@
-package com.tryton.tut.tut_spring_kafka.controller;
+package com.tryton.tut.tut_spring_kafka_producer.controller;
 
-import com.tryton.tut.tut_spring_kafka.service.Producer;
+import com.tryton.tut.tut_spring_kafka_producer.service.Producer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.model;
+package com.tryton.tut.tut_spring_kafka_producer.model;
 
 import lombok.Data;
 

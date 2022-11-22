@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka;
+package com.tryton.tut.tut_spring_kafka_producer;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
