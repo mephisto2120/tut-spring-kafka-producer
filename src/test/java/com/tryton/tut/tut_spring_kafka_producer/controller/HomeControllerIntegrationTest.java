@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.controller;
+package com.tryton.tut.tut_spring_kafka_producer.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.config;
+package com.tryton.tut.tut_spring_kafka_producer.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;

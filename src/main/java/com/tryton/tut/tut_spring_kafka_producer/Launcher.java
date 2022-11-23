@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka;
+package com.tryton.tut.tut_spring_kafka_producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

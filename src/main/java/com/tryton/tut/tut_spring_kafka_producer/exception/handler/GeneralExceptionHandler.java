@@ -1,4 +1,4 @@
-package com.tryton.tut.tut_spring_kafka.exception.handler;
+package com.tryton.tut.tut_spring_kafka_producer.exception.handler;
 
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.http.HttpHeaders;
