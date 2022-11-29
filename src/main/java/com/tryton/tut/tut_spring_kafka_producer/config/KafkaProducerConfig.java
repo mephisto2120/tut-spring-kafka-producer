@@ -3,23 +3,32 @@ package com.tryton.tut.tut_spring_kafka_producer.config;
 import com.launchdarkly.eventsource.EventHandler;
 import com.launchdarkly.eventsource.EventSource;
 import com.tryton.tut.tut_spring_kafka_producer.service.WikimediaChangeHandler;
+import lombok.extern.apachecommons.CommonsLog;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.net.URI;
 import java.util.Properties;
 
+@CommonsLog
 @Configuration
 public class KafkaProducerConfig {
 
+	private String bootstrapServers;
+
+	public KafkaProducerConfig(@Value("${kafka.bootstrap.servers}") String bootstrapServers) {
+		this.bootstrapServers = bootstrapServers;
+		log.info("bootstrapServers: " + bootstrapServers);
+	}
+
 	@Bean
 	public Producer<String, String> kafkaProducer() {
-		String bootstrapServers = "127.0.0.1:9092";
-
 		// create Producer Properties
 		Properties properties = new Properties();
 		properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
