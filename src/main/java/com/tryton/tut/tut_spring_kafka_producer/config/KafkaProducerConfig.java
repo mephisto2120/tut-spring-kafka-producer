@@ -22,7 +22,7 @@ public class KafkaProducerConfig {
 
 	private String bootstrapServers;
 
-	public KafkaProducerConfig(@Value("${spring.kafka.producer.bootstrap-servers}") String bootstrapServers) {
+	public KafkaProducerConfig(@Value("${kafka.bootstrap.servers}") String bootstrapServers) {
 		this.bootstrapServers = bootstrapServers;
 		log.info("bootstrapServers: " + bootstrapServers);
 	}
